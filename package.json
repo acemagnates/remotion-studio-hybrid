@@ -4,16 +4,21 @@
   "description": "Remotion testing environment",
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion bundle src/index.ts build"
+    "dev": "vite",
+    "build": "vite build",
+    "render": "remotion render GoldGraph out/video.mp4"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "^4.0.0"
+    "remotion": "^4.0.0",
+    "@remotion/player": "^4.0.0"
   },
   "devDependencies": {
     "@remotion/cli": "^4.0.0",
     "@types/react": "^18.0.0",
-    "typescript": "^5.0.0"
+    "@vitejs/plugin-react": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
   }
 }
