@@ -4,7 +4,7 @@
   "description": "Remotion testing environment",
   "scripts": {
     "start": "remotion studio",
-    "build": "remotion render"
+    "build": "remotion bundle src/index.ts build"
   },
   "dependencies": {
     "react": "^18.0.0",
