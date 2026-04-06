@@ -1,10 +1,12 @@
 name: Render Video
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
+    inputs:
+      sceneId:
+        description: 'The ID of the Composition to render (e.g., GoldGraph, RunningMan)'
+        required: true
+        default: 'RunningMan'
 
 jobs:
   render:
@@ -21,11 +23,11 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Render GoldGraph
-        run: npx remotion render GoldGraph out/video.mp4
+      - name: Render Video
+        run: npx remotion render ${{ github.event.inputs.sceneId }} out/video.mp4
 
       - name: Upload Finished MP4
         uses: actions/upload-artifact@v4
         with:
-          name: GoldGraph-Video
+          name: ${{ github.event.inputs.sceneId }}-Video
           path: out/video.mp4
