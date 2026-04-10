@@ -1,0 +1,133 @@
+﻿[90mRemotion root directory:[39m [90mC:\Users\Ace\Documents\gem\remotion-studio[39m
+[90mApplied configuration from C:\Users\Ace\Documents\gem\remotion-studio\remotion.config.ts.[39m
+[90mChecking if[39m [90mFailedHustleLabels[39m [90mis the entry file[39m
+[90mSelected[39m [90mC:\Users\Ace\Documents\gem\remotion-studio\src\index.ts[39m [90mas the entry point because file exists and is a common entry point and no entry point was explicitly selected[39m
+[90m[90mEntry point = C:\Users\Ace\Documents\gem\remotion-studio\src\index.ts (common paths)[39m[90m[39m
+[90mEnsuring browser executable[39m
+[90mEnsured browser is available.[39m
+[40m openBrowser() [49m [90mOpening browser: gl = null, executable = C:\Users\Ace\Documents\gem\remotion-studio\node_modules\.remotion\chrome-headless-shell\win64\chrome-headless-shell-win64\chrome-headless-shell.exe, enableMultiProcessOnLinux = true[39m
+Bundling 6%
+Bundling 20%
+Bundling 61%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 99%
+Bundling 100%
+
+node.exe : [31mError: 
+Module build failed (from .
+/node_modules/@remotion/bun
+dler/dist/esbuild-loader/in
+dex.js):[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1mError: Mod...index.j   
+ s):[39m:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[31mError: Transform 
+failed with 1 error:[39m
+[31mC:\Users\Ace\Documents
+\gem\remotion-studio\src\co
+mponents\NameCardAgency.tsx
+:108:27: ERROR: Syntax 
+error "`"[39m
+[31m    at 
+failureErrorWithLog (C:\Use
+rs\Ace\Documents\gem\remoti
+on-studio\node_modules\esbu
+ild\lib\main.js:1477:15)[3
+9m
+[31m    at C:\Users\Ace\Do
+cuments\gem\remotion-studio
+\node_modules\esbuild\lib\m
+ain.js:756:50[39m
+[31m    at responseCallbac
+ks.<computed> (C:\Users\Ace
+\Documents\gem\remotion-stu
+dio\node_modules\esbuild\li
+b\main.js:623:9)[39m
+[31m    at 
+handleIncomingPacket (C:\Us
+ers\Ace\Documents\gem\remot
+ion-studio\node_modules\esb
+uild\lib\main.js:678:12)[3
+9m
+[31m    at 
+Socket.readFromStdout (C:\U
+sers\Ace\Documents\gem\remo
+tion-studio\node_modules\es
+build\lib\main.js:601:7)[3
+9m
+[31m    at Socket.emit 
+(node:events:508:28)[39m
+[31m    at addChunk (node:
+internal/streams/readable:5
+63:12)[39m
+[31m    at readableAddChun
+kPushByteMode (node:interna
+l/streams/readable:514:3)[
+39m
+[31m    at Readable.push (
+node:internal/streams/reada
+ble:394:5)[39m
+[31m    at 
+Pipe.onStreamRead (node:int
+ernal/stream_base_commons:1
+89:23)[39m
+[31mundefined[39m
+[31m    at runWebpack (C:\
+Users\Ace\Documents\gem\rem
+otion-studio\node_modules\@
+remotion\bundler\dist\bundl
+e.js:226:23)[39m
+[31m    at async 
+Object.internalBundle (C:\U
+sers\Ace\Documents\gem\remo
+tion-studio\node_modules\@r
+emotion\bundler\dist\bundle
+.js:230:13)[39m
+[31m    at async 
+bundleOnCli (C:\Users\Ace\D
+ocuments\gem\remotion-studi
+o\node_modules\@remotion\cl
+i\dist\setup-cache.js:150:2
+1)[39m
+[31m    at async 
+bundleOnCliOrTakeServeUrl (
+C:\Users\Ace\Documents\gem\
+remotion-studio\node_module
+s\@remotion\cli\dist\setup-
+cache.js:35:21)[39m
+[31m    at async 
+renderVideoFlow (C:\Users\A
+ce\Documents\gem\remotion-s
+tudio\node_modules\@remotio
+n\cli\dist\render-flows\ren
+der.js:167:53)[39m
+[31m    at async render (C
+:\Users\Ace\Documents\gem\r
+emotion-studio\node_modules
+\@remotion\cli\dist\render.
+js:168:5)[39m
+[31m    at async cli (C:\U
+sers\Ace\Documents\gem\remo
+tion-studio\node_modules\@r
+emotion\cli\dist\index.js:9
+8:13)[39m
+[90mCleaning up...[39m
+[90mCleanup job "Delete C:\Users\Ace\AppData\Local\Temp\remotion-webpack-bundle-d0OzTY" done[39m
+[90mCleanup done in 0ms[39m

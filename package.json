@@ -9,14 +9,21 @@
     "render": "remotion render GoldGraph out/video.mp4"
   },
   "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@remotion/media-utils": "^4.0.447",
+    "@remotion/player": "^4.0.0",
+    "@remotion/three": "^4.0.447",
+    "@types/three": "^0.183.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "remotion": "^4.0.0",
-    "@remotion/player": "^4.0.0"
+    "remotion": "^4.0.447",
+    "three": "^0.183.2"
   },
   "devDependencies": {
-    "@remotion/cli": "^4.0.0",
+    "@remotion/cli": "^4.0.447",
     "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.0.0",
     "vite": "^5.0.0"

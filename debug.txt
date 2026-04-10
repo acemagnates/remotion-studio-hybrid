@@ -1,0 +1,110 @@
+﻿[90mRemotion root directory:[39m [90mC:\Users\Ace\Documents\gem\remotion-studio[39m
+[90mApplied configuration from C:\Users\Ace\Documents\gem\remotion-studio\remotion.config.ts.[39m
+[90mChecking if[39m [90mImanGadzhi[39m [90mis the entry file[39m
+[90mSelected[39m [90mC:\Users\Ace\Documents\gem\remotion-studio\src\index.ts[39m [90mas the entry point because file exists and is a common entry point and no entry point was explicitly selected[39m
+[90m[90mEntry point = C:\Users\Ace\Documents\gem\remotion-studio\src\index.ts (common paths)[39m[90m[39m
+[90mEnsuring browser executable[39m
+[90mEnsured browser is available.[39m
+[40m openBrowser() [49m [90mOpening browser: gl = null, executable = C:\Users\Ace\Documents\gem\remotion-studio\node_modules\.remotion\chrome-headless-shell\win64\chrome-headless-shell-win64\chrome-headless-shell.exe, enableMultiProcessOnLinux = true[39m
+Bundling 6%
+Bundling 18%
+Bundling 64%
+Bundling 69%
+Bundling 74%
+Bundling 80%
+Bundling 85%
+Bundling 90%
+Bundling 99%
+Bundling 100%
+
+node.exe : [31mError: 
+export 'use' (imported as 
+'o') was not found in 
+'react' (possible exports: 
+Children, Component, 
+Fragment, Profiler, 
+PureComponent, StrictMode, 
+Suspense, __SECRET_INTERNAL
+S_DO_NOT_USE_OR_YOU_WILL_BE
+_FIRED, act, cloneElement, 
+createContext, 
+createElement, 
+createFactory, createRef, 
+forwardRef, 
+isValidElement, lazy, 
+memo, startTransition, 
+unstable_act, useCallback, 
+useContext, useDebugValue, 
+useDeferredValue, 
+useEffect, useId, 
+useImperativeHandle, 
+useInsertionEffect, 
+useLayoutEffect, useMemo, 
+useReducer, useRef, 
+useState, 
+useSyncExternalStore, 
+useTransition, 
+version)[39m
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecified: ([3  
+  1mError: exp..., versi   
+ on)[39m:String) [], R    
+emoteException
+    + FullyQualifiedErrorI 
+   d : NativeCommandError
+ 
+[31mundefined[39m
+[31m    at runWebpack (C:\
+Users\Ace\Documents\gem\rem
+otion-studio\node_modules\@
+remotion\bundler\dist\bundl
+e.js:226:23)[39m
+[31m    at process.process
+TicksAndRejections (node:in
+ternal/process/task_queues:
+104:5)[39m
+[31m    at async 
+Object.internalBundle (C:\U
+sers\Ace\Documents\gem\remo
+tion-studio\node_modules\@r
+emotion\bundler\dist\bundle
+.js:230:13)[39m
+[31m    at async 
+bundleOnCli (C:\Users\Ace\D
+ocuments\gem\remotion-studi
+o\node_modules\@remotion\cl
+i\dist\setup-cache.js:150:2
+1)[39m
+[31m    at async 
+bundleOnCliOrTakeServeUrl (
+C:\Users\Ace\Documents\gem\
+remotion-studio\node_module
+s\@remotion\cli\dist\setup-
+cache.js:35:21)[39m
+[31m    at async 
+renderVideoFlow (C:\Users\A
+ce\Documents\gem\remotion-s
+tudio\node_modules\@remotio
+n\cli\dist\render-flows\ren
+der.js:167:53)[39m
+[31m    at async render (C
+:\Users\Ace\Documents\gem\r
+emotion-studio\node_modules
+\@remotion\cli\dist\render.
+js:168:5)[39m
+[31m    at async cli (C:\U
+sers\Ace\Documents\gem\remo
+tion-studio\node_modules\@r
+emotion\cli\dist\index.js:9
+8:13)[39m
+[90mCleaning up...[39m
+[90mCleanup job "Delete C:\Users\Ace\AppData\Local\Temp\remotion-webpack-bundle-J6oaIW" done[39m
+[90mCleanup done in 1ms[39m
