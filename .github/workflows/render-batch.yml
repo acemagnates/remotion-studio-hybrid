@@ -1,0 +1,61 @@
+name: Render Video Batch (Parallel Matrix)
+
+on:
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+
+jobs:
+  setup-matrix:
+    name: Discover Compositions
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # You only need the scripts folder to exist and node, but just in case Root.tsx format depends on something
+      - name: Generate Matrix
+        id: set-matrix
+        # Run the script to extract JSON array
+        run: |
+          MATRIX_JSON=$(node scripts/renderAll.mjs --json)
+          echo "Discovered Clips: $MATRIX_JSON"
+          echo "matrix=$MATRIX_JSON" >> $GITHUB_OUTPUT
+
+  render:
+    name: Render ${{ matrix.clip.sceneId }}
+    needs: setup-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        clip: ${{ fromJson(needs.setup-matrix.outputs.matrix) }}
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Render Video (MP4)
+        run: npx remotion render src/index.ts ${{ matrix.clip.sceneId }} out/${{ matrix.clip.sceneId }}.mp4
+
+      - name: Upload Finished Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.clip.sceneId }}-Video
+          path: out/${{ matrix.clip.sceneId }}.mp4
